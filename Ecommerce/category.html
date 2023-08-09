@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <title>Category</title>  <!--Need to be changed-->
+</head>
+<body>
+    <header>
+        <div class="top-ad">
+            <p>Sign up to our newsletter to receive 15% off on your first order</p>
+        </div>
+
+        <nav class="navBar">
+
+        <div class="logo">
+            <span id="bold-logo">rich</span>apparel
+        </div>
+
+        <ul class="flex-list">
+            <li><a href="#">New</li></a>
+            <li><a href="#">Shop</li></a>
+            <li><a href="#">Cashmere</li></a>
+            <li><a href="#">SmileyWorld</li></a>
+            <li><a href="#">CareBears</li></a>
+            <li><a href="#">LifeStyle</li></a>
+        </ul>
+
+        <div class="svg-container">
+            <ul>
+            <li><a href="#"><img src="./images/image 4.png" alt="uk_flag"></a></li>
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                <path d="M24 24L19.0418 19.0329L24 24ZM21.7895 12.3947C21.7895 14.8864 20.7997 17.276 19.0378 19.0378C17.276 20.7997 14.8864 21.7895 12.3947 21.7895C9.9031 21.7895 7.51351 20.7997 5.75165 19.0378C3.9898 17.276 3 14.8864 3 12.3947C3 9.9031 3.9898 7.51351 5.75165 5.75165C7.51351 3.9898 9.9031 3 12.3947 3C14.8864 3 17.276 3.9898 19.0378 5.75165C20.7997 7.51351 21.7895 9.9031 21.7895 12.3947V12.3947Z" stroke="black" stroke-width="2" stroke-linecap="round"/>
+              </svg></a></li>
+            
+              <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                <path d="M13.9007 6.70191C14.4069 6.25303 14.887 5.76281 15.4287 5.35191C16.5813 4.49372 18.0164 4.10422 19.4447 4.26188C20.873 4.41954 22.1886 5.11264 23.1262 6.20156C23.6467 6.83283 24.0279 7.5669 24.245 8.3557C24.4621 9.1445 24.5101 9.97025 24.386 10.7789C24.1256 12.4961 23.3281 14.0866 22.1078 15.3225C20.5412 17.0274 18.845 18.6085 17.0344 20.0517C16.0615 20.8626 15.0828 21.665 14.1142 22.4809C14.0906 22.5122 14.06 22.5375 14.025 22.555C13.9899 22.5725 13.9513 22.5816 13.9121 22.5816C13.8729 22.5816 13.8343 22.5725 13.7992 22.555C13.7641 22.5375 13.7336 22.5122 13.71 22.4809C12.3338 21.3224 10.9357 20.1893 9.57056 19.0215C7.96989 17.7176 6.49862 16.2624 5.17715 14.6762C4.31494 13.6534 3.72853 12.4271 3.47362 11.1139C2.92603 7.90763 4.63294 5.07263 7.75565 4.36978C8.61806 4.1602 9.51833 4.16199 10.3799 4.37499C11.2415 4.588 12.0389 5.00592 12.7042 5.59322C13.1278 5.94759 13.5151 6.34247 13.9007 6.70191ZM13.9176 8.61722C13.3792 8.03419 12.8755 7.43091 12.3144 6.89006C11.819 6.37398 11.2084 5.98259 10.5326 5.74794C9.85683 5.51329 9.13507 5.44205 8.42644 5.54006C7.63084 5.60945 6.87336 5.91189 6.24875 6.40953C5.62414 6.90718 5.16012 7.57795 4.91475 8.33794C4.66758 9.05053 4.58005 9.80873 4.65834 10.5589C4.73664 11.3091 4.97885 12.0328 5.36784 12.679C6.32515 14.2442 7.53977 15.6365 8.96053 16.7974C10.049 17.7829 11.1771 18.7237 12.295 19.6754C12.8207 20.1234 13.3641 20.5504 13.9057 20.9917C14.0045 20.9225 14.0905 20.871 14.1656 20.8069C15.7519 19.4569 17.3516 18.1305 18.9159 16.7569C19.9798 15.8464 20.9468 14.8285 21.8016 13.7194C22.3385 13.074 22.7326 12.3222 22.9577 11.5134C23.1829 10.7046 23.234 9.85726 23.1077 9.02728C23.0071 8.45827 22.7929 7.91535 22.478 7.4309C22.163 6.94644 21.7537 6.53039 21.2745 6.20754C20.7953 5.88469 20.2559 5.66167 19.6886 5.55178C19.1214 5.44188 18.5377 5.44737 17.9726 5.56791C17.0022 5.76099 16.1151 6.24931 15.4329 6.966C14.9064 7.49841 14.423 8.06456 13.9167 8.61806L13.9176 8.61722Z" fill="black"/>
+              </svg></a></li>
+
+              <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="16" viewBox="0 0 23 16" fill="none">
+                <path d="M0 0V16H23V0H0ZM3.81535 1.77778H19.1855L11.5 6.91644L3.81535 1.77778ZM1.76923 2.55556L11.0028 8.75022L11.5 9.05511L11.998 8.75022L21.2308 2.55556V14.2222H1.76923V2.55556Z" fill="black"/>
+              </svg></a></li>
+
+              <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                <path d="M13.5 12.5C14.8924 12.5 16.2277 11.9469 17.2123 10.9623C18.1969 9.97774 18.75 8.64239 18.75 7.25C18.75 5.85761 18.1969 4.52226 17.2123 3.53769C16.2277 2.55312 14.8924 2 13.5 2C12.1076 2 10.7723 2.55312 9.78769 3.53769C8.80312 4.52226 8.25 5.85761 8.25 7.25C8.25 8.64239 8.80312 9.97774 9.78769 10.9623C10.7723 11.9469 12.1076 12.5 13.5 12.5ZM17 7.25C17 8.17826 16.6313 9.0685 15.9749 9.72487C15.3185 10.3813 14.4283 10.75 13.5 10.75C12.5717 10.75 11.6815 10.3813 11.0251 9.72487C10.3687 9.0685 10 8.17826 10 7.25C10 6.32174 10.3687 5.4315 11.0251 4.77513C11.6815 4.11875 12.5717 3.75 13.5 3.75C14.4283 3.75 15.3185 4.11875 15.9749 4.77513C16.6313 5.4315 17 6.32174 17 7.25ZM24 21.25C24 23 22.25 23 22.25 23H4.75C4.75 23 3 23 3 21.25C3 19.5 4.75 14.25 13.5 14.25C22.25 14.25 24 19.5 24 21.25ZM22.25 21.243C22.2482 20.8125 21.9805 19.5175 20.794 18.331C19.653 17.19 17.5057 16 13.5 16C9.4925 16 7.347 17.19 6.206 18.331C5.0195 19.5175 4.7535 20.8125 4.75 21.243H22.25Z" fill="black"/>
+              </svg></a></li>
+
+              <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="21" viewBox="0 0 18 21" fill="none">
+                <g clip-path="url(#clip0_1_154)">
+                  <path d="M17.6221 5.02118C17.6221 4.56353 17.1475 4.20086 16.6728 4.1102H13.7373C13.7373 2.09827 11.083 0.457649 9 0.457649C6.91699 0.457649 4.26269 2.09827 4.26269 4.1102H1.32715C0.852538 4.1102 0.37793 4.47286 0.37793 5.02118V19.6314C0.37793 20.1797 0.755859 20.5424 1.32715 20.5424H16.6728C17.2441 20.5424 17.6221 20.1797 17.6221 19.6314V5.02118ZM9 1.36863C10.6084 1.36863 12.7881 2.55592 12.7881 4.1102H5.21191C5.21191 2.55592 7.48388 1.36863 9 1.36863ZM1.32715 5.02118H16.5806V19.6314H1.32715V5.02118Z" fill="black"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_154">
+                    <rect width="18" height="21" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg></a></li>
+
+              <li><a href="#">0</li></a>
+            </ul>
+        </div>
+
+
+        </nav>
+    </header>
+
+    <div class="cashmere">
+        <h2>Cashmere</h2>
+        <p>Introduce a little luxury into the everyday with a classic cashmere knit. Ranging from colourful sweaters to day-to-night dresses and relaxed track pants, these pieces are all crafted from pure cashmere or our wool and cashmere blends of the utmost quality and softness.</p>
+        
+    </div>
+    
+
+    <!--All Contents and sidebar-->
+    <div class="category-content">
+
+        <aside class="sidebar">
+            <h2>Cashmere</h2>
+
+            <ul>
+                <li><a href="#">100% Cashmere</a></li>
+                <li><a href="#">Cashmere Jumpers & Sweaters</a></li>
+                <li><a href="#">Cashmere Hoodies</a></li>
+                <li><a href="#">Cashmere Cardigans</a></li>
+                <li><a href="#">Cashmere Loungewear</a></li>
+                <li><a href="#">Cashmere Accessories</a></li>
+                <li><a href="#">Shop All</a></li>
+            </ul>
+        </aside>
+        
+        <div class="main-section">
+
+            <div class="sub-sec">
+            <div class="line1">
+                <a href="#"><span class="hom">Home</span></a>
+                <span>/</span>
+                <a href="#"><span class="cas">Cashmere</span></a>
+            </div>
+
+            <div class="sbf">
+                <h2>sort by feature <span class="down-arrow"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5" fill="none">
+                    <path d="M6.85714 1.28746e-05L4 2.85716L1.14286 1.28746e-05L0 0.571442L4 4.57144L8 0.571442L6.85714 1.28746e-05Z" fill="black"/>
+                  </svg></a></span></h2>
+                
+            </div>
+            </div>
+
+            <div class="sub-sec2">
+                <h2>size <span class="down-arrow"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5" fill="none">
+                    <path d="M6.85714 1.28746e-05L4 2.85716L1.14286 1.28746e-05L0 0.571442L4 4.57144L8 0.571442L6.85714 1.28746e-05Z" fill="black"/>
+                  </svg></a></span></h2>
+                
+                  <h2>colour <span class="down-arrow"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5" fill="none">
+                    <path d="M6.85714 1.28746e-05L4 2.85716L1.14286 1.28746e-05L0 0.571442L4 4.57144L8 0.571442L6.85714 1.28746e-05Z" fill="black"/>
+                  </svg></a></span></h2>
+
+                  <h2>fit <span class="down-arrow"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5" fill="none">
+                    <path d="M6.85714 1.28746e-05L4 2.85716L1.14286 1.28746e-05L0 0.571442L4 4.57144L8 0.571442L6.85714 1.28746e-05Z" fill="black"/>
+                  </svg></a></span></h2>
+
+                  <h2>pattern <span class="down-arrow"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5" fill="none">
+                    <path d="M6.85714 1.28746e-05L4 2.85716L1.14286 1.28746e-05L0 0.571442L4 4.57144L8 0.571442L6.85714 1.28746e-05Z" fill="black"/>
+                  </svg></a></span></h2>
+
+                  <h2>type <span class="down-arrow"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5" fill="none">
+                    <path d="M6.85714 1.28746e-05L4 2.85716L1.14286 1.28746e-05L0 0.571442L4 4.57144L8 0.571442L6.85714 1.28746e-05Z" fill="black"/>
+                  </svg></a></span></h2>
+            </div>
+
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="./images/s1.png" alt="Image 1">
+                <div class="overlay">
+                    <div class="top-left">Summer essentials</div>
+
+                    <div class="top-right"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                        <g clip-path="url(#clip0_9_118)">
+                          <path d="M11.421 0.654419C9.90675 0.654419 8.6035 1.8693 8 3.13819C7.39575 1.86955 6.0925 0.654419 4.57825 0.654419C2.491 0.654419 0.796997 2.32522 0.796997 4.38438C0.796997 8.572 5.0805 9.6705 8 13.8113C10.7595 9.69639 15.2027 8.43909 15.2027 4.38438C15.2027 2.32547 13.5082 0.654419 11.421 0.654419Z" stroke="black" stroke-miterlimit="10"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_9_118">
+                            <rect width="16" height="15" fill="white"/>
+                          </clipPath>
+                        </defs>
+                      </svg></a></div>
+                </div>
+                <div class="bottom-content">
+                <div class="bottom-left">Earl-Grey Cotton-Cashmere
+                    <div class="left2"><br>More Colours Available</div>
+                </div>
+                <div class="bottom-right">£275</div>
+                </div>
+
+            </div> <!--end if item-->
+
+            <div class="grid-item">
+                <img src="./images/s2.png" alt="Image 1">
+                <div class="overlay">
+                    <div class="top-left">Summer essentials</div>
+
+                    <div class="top-right"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                        <g clip-path="url(#clip0_9_118)">
+                          <path d="M11.421 0.654419C9.90675 0.654419 8.6035 1.8693 8 3.13819C7.39575 1.86955 6.0925 0.654419 4.57825 0.654419C2.491 0.654419 0.796997 2.32522 0.796997 4.38438C0.796997 8.572 5.0805 9.6705 8 13.8113C10.7595 9.69639 15.2027 8.43909 15.2027 4.38438C15.2027 2.32547 13.5082 0.654419 11.421 0.654419Z" stroke="black" stroke-miterlimit="10"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_9_118">
+                            <rect width="16" height="15" fill="white"/>
+                          </clipPath>
+                        </defs>
+                      </svg></a></div>
+                </div>
+                <div class="bottom-content">
+                <div class="bottom-left">Earl-Grey Cotton-Cashmere
+                    <div class="left2"><br>More Colours Available</div>
+                </div>
+                <div class="bottom-right">£275</div>
+                </div>
+
+            </div> <!--end if item-->
+            
+            <div class="grid-item">
+                <img src="./images/s3.png" alt="Image 1">
+                <div class="overlay">
+                    <div class="top-left">Summer essentials</div>
+
+                    <div class="top-right"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                        <g clip-path="url(#clip0_9_118)">
+                          <path d="M11.421 0.654419C9.90675 0.654419 8.6035 1.8693 8 3.13819C7.39575 1.86955 6.0925 0.654419 4.57825 0.654419C2.491 0.654419 0.796997 2.32522 0.796997 4.38438C0.796997 8.572 5.0805 9.6705 8 13.8113C10.7595 9.69639 15.2027 8.43909 15.2027 4.38438C15.2027 2.32547 13.5082 0.654419 11.421 0.654419Z" stroke="black" stroke-miterlimit="10"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_9_118">
+                            <rect width="16" height="15" fill="white"/>
+                          </clipPath>
+                        </defs>
+                      </svg></a></div>
+                </div>
+                <div class="bottom-content">
+                <div class="bottom-left">Earl-Grey Cotton-Cashmere
+                    <div class="left2"><br>More Colours Available</div>
+                </div>
+                <div class="bottom-right">£275</div>
+                </div>
+
+            </div>    <!--end if item-->
+            
+            <div class="grid-item">
+                <img src="./images/s4.png" alt="Image 1">
+                <div class="overlay">
+                    <div class="top-left">Summer essentials</div>
+
+                    <div class="top-right"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                        <g clip-path="url(#clip0_9_118)">
+                          <path d="M11.421 0.654419C9.90675 0.654419 8.6035 1.8693 8 3.13819C7.39575 1.86955 6.0925 0.654419 4.57825 0.654419C2.491 0.654419 0.796997 2.32522 0.796997 4.38438C0.796997 8.572 5.0805 9.6705 8 13.8113C10.7595 9.69639 15.2027 8.43909 15.2027 4.38438C15.2027 2.32547 13.5082 0.654419 11.421 0.654419Z" stroke="black" stroke-miterlimit="10"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_9_118">
+                            <rect width="16" height="15" fill="white"/>
+                          </clipPath>
+                        </defs>
+                      </svg></a></div>
+                </div>
+                <div class="bottom-content">
+                <div class="bottom-left">Earl-Grey Cotton-Cashmere
+                    <div class="left2"><br>More Colours Available</div>
+                </div>
+                <div class="bottom-right">£275</div>
+                </div>
+
+            </div>    <!--end if item-->
+
+            <div class="grid-item">
+                <img src="./images/s5.png" alt="Image 1">
+                <div class="overlay">
+                    <div class="top-left">Summer essentials</div>
+
+                    <div class="top-right"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                        <g clip-path="url(#clip0_9_118)">
+                          <path d="M11.421 0.654419C9.90675 0.654419 8.6035 1.8693 8 3.13819C7.39575 1.86955 6.0925 0.654419 4.57825 0.654419C2.491 0.654419 0.796997 2.32522 0.796997 4.38438C0.796997 8.572 5.0805 9.6705 8 13.8113C10.7595 9.69639 15.2027 8.43909 15.2027 4.38438C15.2027 2.32547 13.5082 0.654419 11.421 0.654419Z" stroke="black" stroke-miterlimit="10"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_9_118">
+                            <rect width="16" height="15" fill="white"/>
+                          </clipPath>
+                        </defs>
+                      </svg></a></div>
+                </div>
+                <div class="bottom-content">
+                <div class="bottom-left">Earl-Grey Cotton-Cashmere
+                    <div class="left2"><br>More Colours Available</div>
+                </div>
+                <div class="bottom-right">£275</div>
+                </div>
+
+            </div>    <!--end if item-->
+
+            <div class="grid-item">
+                <img src="./images/s6.png" alt="Image 1">
+                <div class="overlay">
+                    <div class="top-left">Summer essentials</div>
+
+                    <div class="top-right"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                        <g clip-path="url(#clip0_9_118)">
+                          <path d="M11.421 0.654419C9.90675 0.654419 8.6035 1.8693 8 3.13819C7.39575 1.86955 6.0925 0.654419 4.57825 0.654419C2.491 0.654419 0.796997 2.32522 0.796997 4.38438C0.796997 8.572 5.0805 9.6705 8 13.8113C10.7595 9.69639 15.2027 8.43909 15.2027 4.38438C15.2027 2.32547 13.5082 0.654419 11.421 0.654419Z" stroke="black" stroke-miterlimit="10"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_9_118">
+                            <rect width="16" height="15" fill="white"/>
+                          </clipPath>
+                        </defs>
+                      </svg></a></div>
+                </div>
+                <div class="bottom-content">
+                <div class="bottom-left">Earl-Grey Cotton-Cashmere
+                    <div class="left2"><br>More Colours Available</div>
+                </div>
+                <div class="bottom-right">£275</div>
+                </div>
+
+            </div>    <!--end if item-->
+
+            <div class="grid-item">
+                <img src="./images/s7.png" alt="Image 1">
+                <div class="overlay">
+                    <div class="top-left">Summer essentials</div>
+
+                    <div class="top-right"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                        <g clip-path="url(#clip0_9_118)">
+                          <path d="M11.421 0.654419C9.90675 0.654419 8.6035 1.8693 8 3.13819C7.39575 1.86955 6.0925 0.654419 4.57825 0.654419C2.491 0.654419 0.796997 2.32522 0.796997 4.38438C0.796997 8.572 5.0805 9.6705 8 13.8113C10.7595 9.69639 15.2027 8.43909 15.2027 4.38438C15.2027 2.32547 13.5082 0.654419 11.421 0.654419Z" stroke="black" stroke-miterlimit="10"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_9_118">
+                            <rect width="16" height="15" fill="white"/>
+                          </clipPath>
+                        </defs>
+                      </svg></a></div>
+                </div>
+                <div class="bottom-content">
+                <div class="bottom-left">Earl-Grey Cotton-Cashmere
+                    <div class="left2"><br>More Colours Available</div>
+                </div>
+                <div class="bottom-right">£275</div>
+                </div>
+
+            </div>    <!--end if item-->
+
+            <div class="grid-item">
+                <img src="./images/s1.png" alt="Image 1">
+                <div class="overlay">
+                    <div class="top-left">Summer essentials</div>
+
+                    <div class="top-right"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                        <g clip-path="url(#clip0_9_118)">
+                          <path d="M11.421 0.654419C9.90675 0.654419 8.6035 1.8693 8 3.13819C7.39575 1.86955 6.0925 0.654419 4.57825 0.654419C2.491 0.654419 0.796997 2.32522 0.796997 4.38438C0.796997 8.572 5.0805 9.6705 8 13.8113C10.7595 9.69639 15.2027 8.43909 15.2027 4.38438C15.2027 2.32547 13.5082 0.654419 11.421 0.654419Z" stroke="black" stroke-miterlimit="10"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_9_118">
+                            <rect width="16" height="15" fill="white"/>
+                          </clipPath>
+                        </defs>
+                      </svg></a></div>
+                </div>
+                <div class="bottom-content">
+                <div class="bottom-left">Earl-Grey Cotton-Cashmere
+                    <div class="left2"><br>More Colours Available</div>
+                </div>
+                <div class="bottom-right">£275</div>
+                </div>
+
+            </div>    <!--end if item-->
+
+            <div class="grid-item">
+                <img src="./images/s9.png" alt="Image 1">
+                <div class="overlay">
+                    <div class="top-left">Summer essentials</div>
+
+                    <div class="top-right"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                        <g clip-path="url(#clip0_9_118)">
+                          <path d="M11.421 0.654419C9.90675 0.654419 8.6035 1.8693 8 3.13819C7.39575 1.86955 6.0925 0.654419 4.57825 0.654419C2.491 0.654419 0.796997 2.32522 0.796997 4.38438C0.796997 8.572 5.0805 9.6705 8 13.8113C10.7595 9.69639 15.2027 8.43909 15.2027 4.38438C15.2027 2.32547 13.5082 0.654419 11.421 0.654419Z" stroke="black" stroke-miterlimit="10"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_9_118">
+                            <rect width="16" height="15" fill="white"/>
+                          </clipPath>
+                        </defs>
+                      </svg></a></div>
+                </div>
+                <div class="bottom-content">
+                <div class="bottom-left">Earl-Grey Cotton-Cashmere
+                    <div class="left2"><br>More Colours Available</div>
+                </div>
+                <div class="bottom-right">£275</div>
+                </div>
+
+            </div>    <!--end if item-->
+
+            <div class="grid-item">
+                <img src="./images/s10.png" alt="Image 1">
+                <div class="overlay">
+                    <div class="top-left">Summer essentials</div>
+
+                    <div class="top-right"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                        <g clip-path="url(#clip0_9_118)">
+                          <path d="M11.421 0.654419C9.90675 0.654419 8.6035 1.8693 8 3.13819C7.39575 1.86955 6.0925 0.654419 4.57825 0.654419C2.491 0.654419 0.796997 2.32522 0.796997 4.38438C0.796997 8.572 5.0805 9.6705 8 13.8113C10.7595 9.69639 15.2027 8.43909 15.2027 4.38438C15.2027 2.32547 13.5082 0.654419 11.421 0.654419Z" stroke="black" stroke-miterlimit="10"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_9_118">
+                            <rect width="16" height="15" fill="white"/>
+                          </clipPath>
+                        </defs>
+                      </svg></a></div>
+                </div>
+                <div class="bottom-content">
+                <div class="bottom-left">Earl-Grey Cotton-Cashmere
+                    <div class="left2"><br>More Colours Available</div>
+                </div>
+                <div class="bottom-right">£275</div>
+                </div>
+
+            </div>    <!--end if item-->
+
+
+            <!-- Repeat the above three grid-items to create additional rows -->
+        </div> <!--End of row-->
+
+    
+
+    </div><!--main section ends-->>
+
+    <div class="line-container"><div class="line"></div></div>
+        
+    
+
+
+    </div>
+
+
+    <div class="line-container"><div class="line"></div></div>
+
+    <div class="page-number">
+        <ul>
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                <path d="M10.6543 17.5031L3.18362 11.0206C3.11602 10.962 3.0618 10.8896 3.02465 10.8082C2.98749 10.7268 2.96826 10.6384 2.96826 10.549C2.96826 10.4595 2.98749 10.3711 3.02465 10.2897C3.0618 10.2083 3.11602 10.1359 3.18362 10.0773L10.6543 3.5968C10.6768 3.57721 10.7045 3.56452 10.734 3.56022C10.7636 3.55592 10.7937 3.5602 10.8209 3.57255C10.848 3.5849 10.8711 3.60479 10.8873 3.62987C10.9034 3.65495 10.9121 3.68414 10.9121 3.71399V5.29602C10.9121 5.38586 10.8731 5.4718 10.8047 5.53235L5.87698 9.80774H16.875C16.9609 9.80774 17.0313 9.87805 17.0313 9.96399V11.1359C17.0313 11.2218 16.9609 11.2921 16.875 11.2921H5.87698L10.8047 15.5675C10.8731 15.6261 10.9121 15.712 10.9121 15.8038V17.3859C10.9121 17.5187 10.7559 17.591 10.6543 17.5031Z" fill="black"/>
+              </svg></a></li>
+
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                <path d="M9.34569 3.59655L16.8164 10.079C16.884 10.1376 16.9382 10.21 16.9754 10.2914C17.0125 10.3728 17.0317 10.4612 17.0317 10.5507C17.0317 10.6401 17.0125 10.7285 16.9754 10.8099C16.9382 10.8913 16.884 10.9637 16.8164 11.0223L9.34569 17.5028C9.32317 17.5224 9.2955 17.5351 9.26596 17.5394C9.23643 17.5437 9.20629 17.5394 9.17912 17.5271C9.15196 17.5147 9.12891 17.4948 9.11273 17.4697C9.09656 17.4447 9.08793 17.4155 9.08787 17.3856L9.08787 15.8036C9.08787 15.7137 9.12694 15.6278 9.1953 15.5673L14.123 11.2919L3.12499 11.2919C3.03905 11.2919 2.96874 11.2216 2.96874 11.1356L2.96874 9.96374C2.96874 9.8778 3.03905 9.80749 3.12499 9.80749L14.123 9.80749L9.1953 5.53209C9.12694 5.4735 9.08787 5.38756 9.08787 5.29577L9.08787 3.71373C9.08787 3.58092 9.24412 3.50866 9.34569 3.59655Z" fill="black"/>
+              </svg></a></li>
+        </ul>
+    </div>
+
+    <div class="line-container"><div class="line"></div></div>
+
+    <!--submit container-->
+
+    <div class="vector">
+        <ul class="vector-item">
+            <li><a href="#"><img src="./images/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="./images/twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="./images/instagram.png" alt=""></a></li>
+        </ul>
+
+        <div class="submit-container">
+            <h2>Sign up and get 15% off</h2>
+
+            <div class="submit-email">
+                <input type="email" class="borderless-inputbox" name="email" placeholder="Email">
+                <button class="btn3" type="button">Submit</button>
+                </div>
+        </div>
+        
+
+    </div>
+
+    <div class="line-container"><div class="line"></div></div>
+
+    <!--Footer-->
+
+    <div class="footer">
+        <div class="footer-container1">
+            <h3>CUSTOMER SERVICES</h3>
+            <ul>
+                <li>
+                    <a href="#">Contact Us</a>
+                </li>
+                <li>
+                    <a href="#">Delivery & Returns</a>
+                </li>
+                <li>
+                    <a href="#">Terms & Conditions</a>
+                </li>
+                <li>
+                    <a href="#">Privacy & Cookie Policy</a>
+                </li>
+                <li>
+                    <a href="#">FAQs</a>
+                </li>
+                <li>
+                    <a href="#">Klarna</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-container2">
+            <h3>CONTACT US</h3>
+            <ul>
+                <li>
+                    <a href="#"><span class="bb">Customer Service</span></a>
+                </li>
+                <li>
+                    <a href="#">+44 (0) 207 0164312</a>
+                </li>
+                <li>
+                    <a href="#">Email Us</a>
+                </li>
+                <li>
+                    <a href="#"><span class="bb">Wholesale Enquiries</span></a>
+                </li>
+                <li>
+                    <a href="#">+44 (0) 207 0164312</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-container3">
+            <h3>INFORMATION</h3>
+            <ul>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <a href="#">What is Cashmere</a>
+                </li>
+                <li>
+                    <a href="#">Our Supply Chain</a>
+                </li>
+                <li>
+                    <a href="#">Brand Values</a>
+                </li>
+                <li>
+                    <a href="#">Stories</a>
+                </li>
+                <li>
+                    <a href="#">Sweater Fit Guide</a>
+                </li>
+                <li>
+                    <a href="#">Cashmere Care Guide</a>
+                </li>
+                <li>
+                    <a href="#">Careers</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        <p>COPYRIGHT 2022 © <span class="copyright-bold">RICHAPPAREL</span></p>
+    </div>
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
